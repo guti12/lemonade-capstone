@@ -1,0 +1,10 @@
+<h1>Chicago building Permits</h1>
+
+	<% @permits.each do |permit| %>
+		<h2><%= permit["_permit_type"] %></h2>
+		<h3><%= permit["street_number"]%>
+				<%= permit["street_direction"] %>
+				<%= permit["street_name"] %></h3>
+		<br>
+	<% end %>
+	
